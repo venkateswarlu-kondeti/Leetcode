@@ -1,4 +1,4 @@
-package com.linkedlist.programs;
+package com.linkedlist;
 
 import java.util.LinkedList;
 
