@@ -1,4 +1,4 @@
-package com.stacksandqueues.stacks;
+package com.stacksandqueues.queues;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
