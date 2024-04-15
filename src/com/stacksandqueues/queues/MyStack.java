@@ -27,10 +27,11 @@ public class MyStack {
         return queue2.remove();
     }
     public int top(){
-        return queue2.peek();
+
+        return queue2.isEmpty()? 0: queue2.peek();
     }
     public boolean empty(){
-        return queue2.size()==0? true : false;
+        return queue2.isEmpty();
     }
     public static void main(String[] args){
         MyStack myStack=new MyStack();
