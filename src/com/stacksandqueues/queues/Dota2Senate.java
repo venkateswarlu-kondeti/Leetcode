@@ -17,19 +17,14 @@ public class Dota2Senate {
                 }
                 queue1.add(c);
             }
-            System.out.println("queue2 : "+queue2);
-            System.out.println("queue1 : "+queue1);
             while(!queue2.isEmpty()){
                 queue1.add(queue2.remove());
             }
-            System.out.println("queue2 : "+queue2);
-            System.out.println("queue1 : "+queue1);
             charList.clear();
             while(!queue1.isEmpty()){
                 charList.add(queue1.remove());
             }
         }
-        System.out.println("charList : "+charList);
         return charList.get(0)=='R' ? "Radiant" : "Dire";
     }
     public static void main(String[] args){
