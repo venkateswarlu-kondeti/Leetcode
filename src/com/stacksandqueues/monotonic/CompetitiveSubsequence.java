@@ -8,12 +8,12 @@ public class CompetitiveSubsequence {
         Stack<Integer> stack=new Stack<>();
         int[] ans=new int[k];
         int count=0;
-        for(int i=0;i< nums.length;i++){
-            while(!stack.empty() && stack.peek()>nums[i] && count< nums.length-k){
+        for(int num : nums){
+            while(!stack.empty() && stack.peek()>num && count< nums.length-k){
                     stack.pop();
                     count++;
             }
-                stack.push(nums[i]);
+                stack.push(num);
         }
         while(stack.size()>k){
             stack.pop();
