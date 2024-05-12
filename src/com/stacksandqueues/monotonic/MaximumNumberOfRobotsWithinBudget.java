@@ -24,8 +24,8 @@ public class MaximumNumberOfRobotsWithinBudget {
         }
         return chargeTimes.length-left;
 
-        //----------------My Solution----------------------------------------
-        /*Deque<Integer> queue=new LinkedList<>();
+        /*----------------My Solution--------------------------------------------------------------------
+        Deque<Integer> queue=new LinkedList<>();
         long sumRunningCosts=0, totalCost, ans=0;
         int maxChargeTimes=0, left=0;
         for(int right=0;right< chargeTimes.length;right++){
@@ -47,7 +47,8 @@ public class MaximumNumberOfRobotsWithinBudget {
             }
             ans=Math.max(ans,queue.size());
         }
-        return (int)ans;*/
+        return (int)ans;
+        ------------------------------------------------------------------------------------------------*/
     }
     public static void main(String[] args){
         int[] chargeTimes = {3,6,1,3,4};
