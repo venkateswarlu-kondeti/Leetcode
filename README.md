@@ -1,4 +1,4 @@
-# Leetcode: Own Logics and Leetcode editorial suggested.
+# Leetcode: Own Logics and Leetcode Editorial suggested.
 
 
 
