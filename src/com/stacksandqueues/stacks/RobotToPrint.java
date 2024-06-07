@@ -24,6 +24,9 @@ public class RobotToPrint {
             stack.push(ch);
             charList.remove(ch);
         }
+        System.out.println(stack);
+
+
         while(!stack.isEmpty()){
             p.append(stack.pop());
         }
