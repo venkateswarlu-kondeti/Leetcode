@@ -1,7 +1,6 @@
 package com.treesandgraphs;
 
 
-import sun.reflect.generics.tree.Tree;
 
 public class MaximumDepthOfBinaryTree {
     public static int maxDepth(TreeNode root){
