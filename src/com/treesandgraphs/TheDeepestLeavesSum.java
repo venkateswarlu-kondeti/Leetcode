@@ -5,6 +5,9 @@ import java.util.Queue;
 
 public class TheDeepestLeavesSum {
     public static int deepestLeavesSum(TreeNode root){
+        if(root==null){
+            return 0;
+        }
         Queue<TreeNode> queue=new LinkedList<>();
         queue.add(root);
         int ans=0;
