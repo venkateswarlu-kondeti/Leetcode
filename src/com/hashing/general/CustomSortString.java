@@ -21,15 +21,18 @@ public class CustomSortString {
                 }
             }
         }
-        for(Map.Entry<Character,Integer> e : dic.entrySet()){
-            while(dic.get(e.getKey())>0){
-                sb.append(e.getKey());
-                dic.put(e.getKey(),dic.get(e.getKey())-1);
+        if(!dic.isEmpty()){
+            for(Map.Entry<Character,Integer> e : dic.entrySet()){
+                while(dic.get(e.getKey())>0){
+                    sb.append(e.getKey());
+                    dic.put(e.getKey(),dic.get(e.getKey())-1);
+                }
             }
         }
         return sb.toString();
     }
     public static void main(String[] args){
+        System.out.println("The custom sort string is: "+customSortString("ccbad","ccb"));
         System.out.println("The custom sort string is: "+customSortString("cba","abcd"));
         System.out.println("The custom sort string is: "+customSortString("cbafg","abcd"));
         System.out.println("The custom sort string is: "+customSortString("kqep","pekeq"));
