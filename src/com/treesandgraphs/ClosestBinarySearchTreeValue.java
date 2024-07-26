@@ -7,6 +7,17 @@ import java.util.Map;
 
 public class ClosestBinarySearchTreeValue {
     public static int closestValue(TreeNode root, double target){
+        double val, closest=root.val;
+        while(root!=null){
+            val= root.val;;
+            closest=Math.abs(val-target)<Math.abs(closest-target)|| Math.abs(val-target)==Math.abs(closest-target) && val<closest? val : closest;
+            root= val< root.val? root.left : root.right;
+        }
+        return (int)closest;
+    }
+
+    ///--------------------------My Solution-------------------------------------------
+    /*public static int closestValue(TreeNode root, double target){
         Map<Double,Integer> diffToNodevalueMap=new HashMap<>();
         dfs(root,diffToNodevalueMap, target);
         System.out.println(diffToNodevalueMap);
@@ -33,7 +44,7 @@ public class ClosestBinarySearchTreeValue {
             }
             dfs(node.right,diffToNodeMap,target);
         }
-    }
+    }*/
     public static void main(String[] args){
         TreeNode root=new TreeNode(4);
         TreeNode two=new TreeNode(2);
