@@ -1,4 +1,4 @@
-package com.treesandgraphs;
+package com.trees;
 
 public class InsertBST {
     public static TreeNode insertIntoBST(TreeNode root, int val){

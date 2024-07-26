@@ -1,4 +1,4 @@
-package com.treesandgraphs;
+package com.trees;
 
 public class LowestCommonAncestorOfABinaryTree {
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q){

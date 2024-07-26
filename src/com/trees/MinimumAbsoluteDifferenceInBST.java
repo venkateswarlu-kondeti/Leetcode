@@ -1,33 +1,25 @@
-package com.treesandgraphs;
+package com.trees;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
-public class MinimumAbsoluteDifferenceInBSTIterative {
-    public static int getMinimumDifferenceIterative(TreeNode root){
-        List<Integer> values=iterativeInorder(root);
+public class MinimumAbsoluteDifferenceInBST {
+    public static int getMinimumDifference(TreeNode root){
+        List<Integer> values=new ArrayList<>();
+        dfs(root,values);
         int ans=Integer.MAX_VALUE;
         for(int i=1;i<values.size();i++){
             ans=Math.min(ans,Math.abs(values.get(i)-values.get(i-1)));
         }
         return ans;
     }
-    public static List<Integer> iterativeInorder(TreeNode root){
-        Stack<TreeNode> stack=new Stack<>();
-        List<Integer> values=new ArrayList<>();
-        TreeNode curr=root;
-        while(!stack.empty() || curr!=null){
-            if(curr!=null){
-                stack.push(curr);
-                curr=curr.left;
-            }else{
-                curr=stack.pop();
-                values.add(curr.val);
-                curr=curr.right;
-            }
+    public static void dfs(TreeNode node, List<Integer> values){
+        if(node==null){
+            return;
         }
-        return values;
+        dfs(node.left,values);
+        values.add(node.val);
+        dfs(node.right,values);
     }
     public static void main(String[] args){
         TreeNode root=new TreeNode(9);
@@ -39,7 +31,7 @@ public class MinimumAbsoluteDifferenceInBSTIterative {
         five.left=one;
         five.right=seven;
         root.right=fifteen;
-        System.out.println("The minimum absolute difference in BST using iterative is: "+MinimumAbsoluteDifferenceInBSTIterative.getMinimumDifferenceIterative(root));
+        System.out.println("The minimum absolute difference of BST is: "+MinimumAbsoluteDifferenceInBST.getMinimumDifference(root));
     }
     public static class TreeNode{
         int val;

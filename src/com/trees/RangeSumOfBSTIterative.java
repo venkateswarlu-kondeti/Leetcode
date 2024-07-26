@@ -1,20 +1,23 @@
-package com.treesandgraphs;
+package com.trees;
 
-// 938. Range Sum of BST
-public class RangeSumOfBST {
-    public static int rangeSumBST(TreeNode root, int low, int high){
-        if(root==null){
-            return 0;
-        }
+import java.util.Stack;
+
+public class RangeSumOfBSTIterative {
+    public static int rangeSumBSTIterative(TreeNode root, int low, int high){
+        Stack<TreeNode> stack=new Stack<>();
+        stack.push(root);
         int ans=0;
-        if(low<= root.val && root.val<=high){
-            ans+=root.val;
-        }
-        if(low< root.val){
-            ans+=rangeSumBST(root.left, low, high);
-        }
-        if(root.val<high){
-            ans+=rangeSumBST(root.right,low,high);
+        while(!stack.empty()){
+            TreeNode node=stack.pop();
+            if(low<= node.val && node.val<=high){
+                ans+=node.val;
+            }
+            if(node.left!=null && low<node.val){
+                stack.push(node.left);
+            }
+            if(node.right!=null && node.val<high){
+                stack.push(node.right);
+            }
         }
         return ans;
     }
@@ -30,7 +33,7 @@ public class RangeSumOfBST {
         five.right=seven;
         root.right=fifteen;
         fifteen.right=eighteen;
-        System.out.println("The range sum of BST is: "+RangeSumOfBST.rangeSumBST(root,7,15));
+        System.out.println("The range sum of BST is: "+RangeSumOfBSTIterative.rangeSumBSTIterative(root,7,15));
     }
     public static class TreeNode{
         int val;

@@ -1,4 +1,4 @@
-package com.treesandgraphs;
+package com.trees;
 
 public class MinimumDepthOfBinaryTree {
     public static int minDepth(TreeNode root){

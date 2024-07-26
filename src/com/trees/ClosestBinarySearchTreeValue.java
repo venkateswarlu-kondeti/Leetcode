@@ -1,9 +1,4 @@
-package com.treesandgraphs;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+package com.trees;
 
 public class ClosestBinarySearchTreeValue {
     public static int closestValue(TreeNode root, double target){

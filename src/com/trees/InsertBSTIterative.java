@@ -1,4 +1,4 @@
-package com.treesandgraphs;
+package com.trees;
 
 public class InsertBSTIterative {
     public static TreeNode insertIntoBSTIterative(TreeNode root, int val){

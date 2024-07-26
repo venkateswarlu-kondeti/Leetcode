@@ -1,4 +1,4 @@
-package com.treesandgraphs;
+package com.trees;
 
 public class PathSum {
     static int target;

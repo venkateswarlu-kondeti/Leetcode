@@ -1,4 +1,4 @@
-package com.treesandgraphs;
+package com.trees;
 
 public class MaximumDifferenceBetweenNodeAndAncestor {
     public static int maxAncestorDiff(TreeNode root){

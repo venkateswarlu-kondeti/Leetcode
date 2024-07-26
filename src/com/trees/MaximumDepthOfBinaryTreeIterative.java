@@ -1,17 +1,32 @@
-package com.treesandgraphs;
+package com.trees;
 
+import java.util.Stack;
 
-
-public class MaximumDepthOfBinaryTree {
+public class MaximumDepthOfBinaryTreeIterative {
     public static int maxDepth(TreeNode root){
         if(root==null){
             return 0;
         }
-        int left=maxDepth(root.left);
-        int right=maxDepth(root.right);
-        return Math.max(left,right)+1;
-    }
 
+        Stack<Pair> stack=new Stack<>();
+        stack.push(new Pair(root,1));
+        int ans=0;
+
+        while(!stack.empty()){
+            Pair pair=stack.pop();
+            TreeNode node=pair.node;
+            int depth=pair.depth;
+
+            ans=Math.max(ans,depth);
+            if(node.left!=null){
+                stack.push(new Pair(node.left,depth+1));
+            }
+            if(node.right!=null){
+                stack.push(new Pair(node.right, depth+1));
+            }
+        }
+        return ans;
+    }
     public static void main(String[] args){
         TreeNode root=new TreeNode(0);
         TreeNode one=new TreeNode(1);
@@ -28,7 +43,15 @@ public class MaximumDepthOfBinaryTree {
         two.right=five;
         five.right=six;
 
-        System.out.println("The maximum depth of binary tree is: "+maxDepth(root));
+        System.out.println("The maximum depth of binary tree using stack is: "+maxDepth(root));
+    }
+    public static class Pair{
+        TreeNode node;
+        int depth;
+        Pair(TreeNode node, int depth){
+            this.node=node;
+            this.depth=depth;
+        }
     }
     public static class TreeNode{
         int val;

@@ -1,4 +1,4 @@
-package com.treesandgraphs;
+package com.trees;
 
 public class SameTree {
     public static boolean isSameTree(TreeNode root1, TreeNode root2){
