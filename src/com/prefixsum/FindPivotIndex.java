@@ -18,8 +18,7 @@ public class FindPivotIndex {
             leftSum=prefix[j]-nums[j];
             rightSum=prefix[n-1]-prefix[j];
             if(leftSum==rightSum){
-                ans=j;
-                break;
+                return j;
             }
         }
         return ans;
