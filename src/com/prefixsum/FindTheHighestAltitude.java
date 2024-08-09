@@ -2,7 +2,7 @@ package com.prefixsum;
 
 import java.util.Arrays;
 
-public class FindTheHisestAltitude {
+public class FindTheHighestAltitude {
     public int largestAltitude(int[] gain){
         int n=gain.length;
         int ans=0;
@@ -19,7 +19,7 @@ public class FindTheHisestAltitude {
     }
 
     public static void main(String[] args){
-        FindTheHisestAltitude fh=new FindTheHisestAltitude();
+        FindTheHighestAltitude fh=new FindTheHighestAltitude();
         //int[] g={-5,1,5,0,-7};
         int[] g={-4,-3,-2,-1,4,3,2};
         System.out.println("The highest altitude is: "+fh.largestAltitude(g));
