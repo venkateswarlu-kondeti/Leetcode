@@ -1,47 +1,55 @@
 package com.linkedlist;
 
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Set;
 
 public class LinkedListCycle {
-    static class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode(int x) {
-            val = x;
-            next = null;
+    public static boolean hasCycle(ListNode head) {
+        /*ListNode slow=head;
+        ListNode fast=head.next;
+        while(slow!=fast){
+            if(fast==null || fast.next==null){
+                return false;
+            }
+            slow=slow.next;
+            fast=fast.next.next;
         }
-    }
+        return true;*/
 
-    public boolean hasCycle(ListNode head) {
-        boolean status;
-
-        LinkedList h=new LinkedList();
-        h.add(head.val);
-
-        if (head.next != null) {
-            head.next = head;
+        //----Another Solution-----------------------
+        Set<ListNode> seen=new HashSet<>();
+        while(head!=null){
+            if(seen.contains(head)){
+                return true;
+            }
+            seen.add(head);
+            head=head.next;
         }
-        if (head.next != null) {
-            status = true;
-        } else {
-            status = false;
-        }
-        System.out.println("Head is: " + head.val + " and  " + head.next);
-        return status;
+        return false;
     }
 
     public static void main(String[] args) {
-        int[] a = {3, 2, 0, -4};
-        ListNode head = null;
-        LinkedListCycle llc = new LinkedListCycle();
+        ListNode node1=new ListNode(3);
+        ListNode node2=new ListNode(2);
+        ListNode node3=new ListNode(0);
+        ListNode node4=new ListNode(-4);
+        node1.next=node2;
+        node2.next=node3;
+        node3.next=node4;
+        node4.next=node2;
+        ListNode head=node1;
+        System.out.println("Is there a cycle: "+LinkedListCycle.hasCycle(head));
 
-        for (int i = 0; i < a.length; i++) {
-            head = new ListNode(a[i]);
+    }
+    public static class ListNode{
+        int val;
+        ListNode next;
+        ListNode(int x){
+            val=x;
+            next=null;
         }
-
-        System.out.println("Cycle: " + llc.hasCycle(head));
-
     }
 }
 
