@@ -7,7 +7,7 @@ import java.util.Set;
 public class LinkedListCycle {
 
     public static boolean hasCycle(ListNode head) {
-        /*ListNode slow=head;
+        ListNode slow=head;
         ListNode fast=head.next;
         while(slow!=fast){
             if(fast==null || fast.next==null){
@@ -16,10 +16,10 @@ public class LinkedListCycle {
             slow=slow.next;
             fast=fast.next.next;
         }
-        return true;*/
+        return true;
 
         //----Another Solution-----------------------
-        Set<ListNode> seen=new HashSet<>();
+        /*Set<ListNode> seen=new HashSet<>();
         while(head!=null){
             if(seen.contains(head)){
                 return true;
@@ -27,7 +27,7 @@ public class LinkedListCycle {
             seen.add(head);
             head=head.next;
         }
-        return false;
+        return false;*/
     }
 
     public static void main(String[] args) {
