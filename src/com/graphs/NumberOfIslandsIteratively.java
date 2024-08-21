@@ -17,7 +17,7 @@ public class NumberOfIslandsIteratively {
                 if(grid[row][col]=='1' && !seen[row][col]){
                     ans++;
                     seen[row][col]=true;
-                    dfs(row,col,grid);
+                    calculateIslands(row,col,grid);
                 }
             }
         }
@@ -26,7 +26,7 @@ public class NumberOfIslandsIteratively {
     public static boolean valid(int row, int col, char[][] grid){
         return 0<=row && row<m && 0<=col && col<n && grid[row][col]=='1';
     }
-    public static void dfs(int startRow, int startCol, char[][] grid){
+    public static void calculateIslands(int startRow, int startCol, char[][] grid){
         Stack<Integer> rowStack=new Stack<>();
         Stack<Integer> colStack=new Stack<>();
         rowStack.push(startRow);
