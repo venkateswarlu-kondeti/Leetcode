@@ -40,15 +40,15 @@ public class ReachableNodesWithRestrictionsIterative {
         int[] restricted={4,5};
         System.out.println("The reachable nodes with restrictions are: "+ReachableNodesWithRestrictionsIterative.reachableNodesIterative(n,edges,restricted));*/
 
-        /*int n=7;
+        int n=7;
         int[][] edges={{0,1},{0,2},{0,5},{0,4},{3,2},{6,5}};
         int[] restricted={4,2,1};
-        System.out.println("The reachable nodes with restrictions are: "+ReachableNodesWithRestrictionsIterative.reachableNodesIterative(n,edges,restricted));*/
+        System.out.println("The reachable nodes with restrictions are: "+ReachableNodesWithRestrictionsIterative.reachableNodesIterative(n,edges,restricted));
 
-        int n=2;
+        /*int n=2;
         int[][] edges={{0,1}};
         int[] restricted={1};
-        System.out.println("The reachable nodes with restrictions are: "+ReachableNodesWithRestrictionsIterative.reachableNodesIterative(n,edges,restricted));
+        System.out.println("The reachable nodes with restrictions are: "+ReachableNodesWithRestrictionsIterative.reachableNodesIterative(n,edges,restricted));*/
 
         /*int n=10;
         int[][] edges={{8,2},{2,5},{5,0},{2,7},{1,7},{3,8},{0,4},{3,9},{1,6}};
