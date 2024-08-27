@@ -1,0 +1,38 @@
+-------------Binary tree: DFS (recursive)------------------------
+
+-------------------Preorder DFS----------------------------------
+public int preorderDfs(TreeNode root) {
+    if (root == null) {
+        return 0;
+    }
+
+    int ans = 0;
+    // do logic
+    preorderDfs(root.left);
+    preorderDfs(root.right);
+    return ans;
+}
+-------------------Inorder DFS----------------------------------
+public int inorderDfs(TreeNode root) {
+    if (root == null) {
+        return 0;
+    }
+
+    int ans = 0;
+    inorderDfs(root.left);
+    // do logic
+    inorderDfs(root.right);
+    return ans;
+}
+-------------------Postorder DFS----------------------------------
+public int postorderDfs(TreeNode root) {
+    if (root == null) {
+        return 0;
+    }
+
+    int ans = 0;
+    postorderDfs(root.left);
+    postorderDfs(root.right);
+    // do logic
+    return ans;
+}

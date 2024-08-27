@@ -1,0 +1,16 @@
+-----------------Efficient string building--------------------------
+
+
+public String fn(char[] arr) {
+    StringBuilder sb = new StringBuilder();
+    for (char c: arr) {
+        sb.append(c);
+    }
+
+    return sb.toString();
+}
+
+
+
+
+-------------In JavaScript, benchmarking shows that concatenation with += is faster than using .join().-------------------
