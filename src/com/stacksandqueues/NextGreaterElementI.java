@@ -8,17 +8,17 @@ import java.util.Stack;
 public class NextGreaterElementI {
     public static int[] nextGreaterElement(int[] nums1, int[] nums2){
         int[] ans=new int[nums1.length];
-        Stack<Integer> queue=new Stack<>();
+        Stack<Integer> stack=new Stack<>();
         HashMap<Integer,Integer> valMap=new HashMap<>();
 
         for(int i=0;i< nums2.length;i++){
-            while(!queue.empty() && nums2[i]>queue.peek()){
-                valMap.put(queue.pop(),nums2[i]);
+            while(!stack.empty() && nums2[i]>stack.peek()){
+                valMap.put(stack.pop(),nums2[i]);
             }
-            queue.push(nums2[i]);
+            stack.push(nums2[i]);
         }
-        while(!queue.empty()){
-            valMap.put(queue.pop(),-1);
+        while(!stack.empty()){
+            valMap.put(stack.pop(),-1);
         }
         for(int i=0;i< nums1.length;i++){
             ans[i]=valMap.get(nums1[i]);
