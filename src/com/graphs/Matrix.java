@@ -5,16 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 // 542. 01 Matrix
-class State{
-    int row;
-    int col;
-    int steps;
-    State(int row, int col, int steps){
-        this.row=row;
-        this.col=col;
-        this.steps=steps;
-    }
-}
+
 public class Matrix {
     public static int m;
     public static int n;
@@ -58,6 +49,16 @@ public class Matrix {
     public static void main(String[] args){
         int[][] mat={{0,0,0},{0,1,0},{1,1,1}};
         System.out.println("The distance of the nearest 0 of each cell is: "+ Arrays.deepToString(Matrix.updateMatrix(mat)));
+    }
+    public static class State{
+        int row;
+        int col;
+        int steps;
+        State(int row, int col, int steps){
+            this.row=row;
+            this.col=col;
+            this.steps=steps;
+        }
     }
 }
 
