@@ -1,6 +1,7 @@
 package com.trees.binary_trees_bfs;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class MaximumLevelSumOfBinaryTree {
     public static int maxLevelSum(TreeNode root) {
@@ -8,31 +9,31 @@ public class MaximumLevelSumOfBinaryTree {
         int ans = 0;
         int level = 0;
 
-        Queue<TreeNode> q = new LinkedList<>();
+        Queue<TreeNode> q=new LinkedList<>();
         q.offer(root);
 
-        while (!q.isEmpty()) {
+        while(!q.isEmpty()){
             level++;
-            int sumAtCurrentLevel = 0;
-            for (int sz = q.size(); sz > 0; --sz) {
-                TreeNode node = q.poll();
-                sumAtCurrentLevel += node.val;
+            int sumAtCurrentLevel=0;
+            for(int sz=q.size();sz>0;--sz){
+                TreeNode node=q.poll();
+                sumAtCurrentLevel+=node.val;
 
-                if (node.left != null) {
+                if(node.left!=null){
                     q.offer(node.left);
                 }
-                if (node.right != null) {
+                if(node.right!=null){
                     q.offer(node.right);
                 }
             }
-            if (maxSum < sumAtCurrentLevel) {
-                maxSum = sumAtCurrentLevel;
-                ans = level;
+            if(maxSum<sumAtCurrentLevel){
+                maxSum=sumAtCurrentLevel;
+                ans=level;
+
             }
         }
         return ans;
     }
-
 
     //------------My Solution-------------------------------------------
     /*public static int maxLevelSum(TreeNode root) {
