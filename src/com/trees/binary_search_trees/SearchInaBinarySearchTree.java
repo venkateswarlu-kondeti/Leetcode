@@ -10,7 +10,7 @@ public class SearchInaBinarySearchTree {
         }
         return val< root.val ? searchBST(root.left, val) : searchBST(root.right, val);
 
-        //----------------------------Another solution--------------------------------
+        //----------------------------Another solution iterative--------------------------------
 
         /*while(root!=null && root.val!=val){
             root=val< root.val ? root.left : root.right;
