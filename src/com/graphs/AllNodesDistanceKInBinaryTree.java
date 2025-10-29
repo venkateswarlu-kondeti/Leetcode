@@ -61,7 +61,7 @@ public class AllNodesDistanceKInBinaryTree {
         one.left=zero;
         one.right=eight;
 
-        System.out.println("All the nodes with distance K in Binary Tree is: "+AllNodesDistanceKInBinaryTree.distanceK(root,target,k));
+        System.out.println("All the nodes with distance K in the Binary Tree is: "+AllNodesDistanceKInBinaryTree.distanceK(root,target,k));
     }
     public static class TreeNode{
         int val;
