@@ -4,10 +4,9 @@ import java.util.*;
 
 //All Ancestors of a Node in a Directed Acyclic Graph
 public class AllAncestorsOfaNodeInaDirectedAcyclicGraph {
-    //public static Map<Integer, List<Integer>> graph;
-    public static List<List<Integer>> graph;
+    public static Map<Integer, List<Integer>> graph;
     public static List<List<Integer>> getAncestors(int n, int[][] edges) {
-        /*graph=new HashMap<>();
+        graph=new HashMap<>();
         for(int[] edge : edges){
             if(!graph.containsKey(edge[1])){
                 graph.put(edge[1],new ArrayList<>());
@@ -18,36 +17,28 @@ public class AllAncestorsOfaNodeInaDirectedAcyclicGraph {
             if(!graph.containsKey(i)){
                 graph.put(i,new ArrayList<>());
             }
-        }*/
-        graph=new ArrayList<>(n);
-        for(int i=0;i<n;i++){
-            graph.add(new ArrayList<>());
         }
-        for(int[] edge : edges){
-            graph.get(edge[1]).add(edge[0]);
-        }
-        //System.out.println(graph);
         List<List<Integer>> ans=new ArrayList<>();
-        for(int i=n-1; i>=0;i--){
+        for(int i=0; i<n;i++){
             ans.add(getNodeAncestors(i));
         }
-        Collections.reverse(ans);
         return ans;
     }
     public static List<Integer> getNodeAncestors(int child){
         Queue<Integer> queue=new LinkedList<>();
-        Set<Integer> ancestorSet=new HashSet<>();
+        List<Integer> visited=new ArrayList<>();
         queue.add(child);
         while (!queue.isEmpty()){
             int node=queue.remove();
             for(int ancestor : graph.get(node)){
-                ancestorSet.add(ancestor);
-                queue.add(ancestor);
+                if(!visited.contains(ancestor)){
+                    visited.add(ancestor);
+                    queue.add(ancestor);
+                }
             }
         }
-        List<Integer> ancestorList=new ArrayList<>(ancestorSet);
-        Collections.sort(ancestorList);
-        return ancestorList;
+        Collections.sort(visited);
+        return visited;
     }
 
     public static void main(String[] args){
