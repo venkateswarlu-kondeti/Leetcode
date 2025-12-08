@@ -1,7 +1,7 @@
-package com.graphs;
+package com.graphs.bonus_graphs;
 
 import java.util.*;
-
+//1376. Time Needed to Inform All Employees
 public class TimeNeededToInformAllEmployees {
     //--------------DFS-------------------------------------
     /*public static int maxTime=Integer.MIN_VALUE;

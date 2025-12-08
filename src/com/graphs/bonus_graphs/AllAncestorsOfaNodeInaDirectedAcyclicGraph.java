@@ -2,7 +2,7 @@ package com.graphs.bonus_graphs;
 
 import java.util.*;
 
-//All Ancestors of a Node in a Directed Acyclic Graph
+//2192. All Ancestors of a Node in a Directed Acyclic Graph
 public class AllAncestorsOfaNodeInaDirectedAcyclicGraph {
     public static Map<Integer, List<Integer>> graph;
     public static List<List<Integer>> getAncestors(int n, int[][] edges) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//997. Find the Town Judge
 public class FindTheTownJudge {
     public static int findJudge(int n, int[][] trust) {
         if(trust.length==0 && n>1){

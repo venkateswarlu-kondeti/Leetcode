@@ -1,7 +1,7 @@
 package com.graphs.bonus_graphs;
 
 import java.util.*;
-
+//1615. Maximal Network Rank
 public class MaximalNetworkRank {
     public static int maximalNetworkRank(int n, int[][] roads) {
         Map<Integer, Set<Integer>> graph=new HashMap<>();

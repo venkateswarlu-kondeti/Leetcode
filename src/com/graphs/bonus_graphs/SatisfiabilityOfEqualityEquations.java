@@ -1,7 +1,7 @@
 package com.graphs.bonus_graphs;
 
 import java.util.*;
-
+//990. Satisfiability of Equality Equations
 public class SatisfiabilityOfEqualityEquations {
     public static boolean equationsPossible(String[] equations) {
         Map<Integer, Set<Integer>> graph=new HashMap<>();
