@@ -1,7 +1,7 @@
 package com.graphs;
 
 import java.util.*;
-
+//2368. Reachable Nodes With Restrictions
 public class ReachableNodesWithRestrictions {
     public static Set<Integer> seen;
     public static Map<Integer,List<Integer>> graph;

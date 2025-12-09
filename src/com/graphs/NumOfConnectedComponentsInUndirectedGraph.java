@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//323. Number of Connected Components in an Undirected Graph
 public class NumOfConnectedComponentsInUndirectedGraph {
     public static int countComponents(int n, int[][] edges){
         boolean[] seen=new boolean[n];

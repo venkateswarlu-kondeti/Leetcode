@@ -2,7 +2,7 @@ package com.graphs;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
+//1926. Nearest Exit from Entrance in Maze
 public class NearestExitFromEntranceInMaze {
     public static int m;
     public static int n;
