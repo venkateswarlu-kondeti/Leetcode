@@ -3,7 +3,7 @@ package com.hashing.checkingForExistence;
 
 
 import java.util.*;
-
+//1496. Path Crossing
 public class PathCrossing {
     public boolean isPathCrossing(String path){
         Map<Character,List<Integer>> dic=new HashMap<>();

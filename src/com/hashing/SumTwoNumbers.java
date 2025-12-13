@@ -1,7 +1,7 @@
 package com.hashing;
 
 import java.util.*;
-
+//1. Two Sum
 public class SumTwoNumbers {
     public int[] twoSum(int[] nums, int target){
         Map<Integer, Integer> dic=new HashMap<>();

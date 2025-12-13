@@ -2,7 +2,7 @@ package com.hashing;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//560. Subarray Sum Equals K
 public class SubarraySumEqualsK {
     public int subarraySum(int[] nums, int k){
         Map<Integer,Integer> counts=new HashMap<>();

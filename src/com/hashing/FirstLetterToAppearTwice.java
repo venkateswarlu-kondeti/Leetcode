@@ -2,7 +2,7 @@ package com.hashing;
 
 import java.util.HashSet;
 import java.util.Set;
-
+//2351. First Letter to Appear Twice
 public class FirstLetterToAppearTwice {
     public char repeatedCharacter(String s){
         Set<Character> seen=new HashSet<>();

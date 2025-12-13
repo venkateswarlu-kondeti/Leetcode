@@ -2,7 +2,7 @@ package com.hashing.counting;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//1394. Find Lucky Integer in an Array
 public class FindLuckyIntegerInAnArray {
     public int findLucky(int[] arr){
         Map<Integer,Integer> dic=new HashMap<>();

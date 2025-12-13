@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FindingLongestSubstring {
-    public int finLongestSubstring(String s, int k){
+    public int findLongestSubstring(String s, int k){
         Map<Character,Integer> counts=new HashMap<>();
         int left=0;
         int ans=0;
@@ -27,6 +27,6 @@ public class FindingLongestSubstring {
         FindingLongestSubstring fls=new FindingLongestSubstring();
         String s="eceba";
         int k=2;
-        System.out.println("The longest substring is: "+fls.finLongestSubstring(s,k));
+        System.out.println("The longest substring is: "+fls.findLongestSubstring(s,k));
     }
 }

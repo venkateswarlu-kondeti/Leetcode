@@ -3,7 +3,7 @@ package com.hashing;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
+//525. Contiguous Array
 public class ContiguousArray {
     public static int findMaxlength(int[] nums) {
         Map<Integer, Integer> counts = new HashMap<>();

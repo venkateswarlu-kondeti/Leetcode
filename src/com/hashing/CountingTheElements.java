@@ -2,7 +2,7 @@ package com.hashing;
 
 import java.util.HashSet;
 import java.util.Set;
-
+//1426. Counting Elements
 public class CountingTheElements {
     public int countElements(int[] arr){
         Set<Integer> elements=new HashSet<>(); // This costs O(n) space complexity

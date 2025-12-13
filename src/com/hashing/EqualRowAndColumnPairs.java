@@ -2,7 +2,7 @@ package com.hashing;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//2352. Equal Row and Column Pairs
 public class EqualRowAndColumnPairs {
     public int equalPairs(int[][] grid){
         Map<String,Integer> dic=new HashMap<>();

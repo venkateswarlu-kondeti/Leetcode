@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
+//1248. Count Number of Nice Subarrays
 public class CountNumberOfNiceSubarrays {
     public int numberOfSubarrays(int[] nums, int k){
         Map<Integer,Integer> counts=new HashMap<>();

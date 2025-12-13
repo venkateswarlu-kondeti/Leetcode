@@ -1,11 +1,11 @@
 package com.hashing;
 
 import java.util.*;
-
+//49. Group Anagrams
 public class TheGroupAnagrams {
-    public List<List<String>> groupAnagrams(String[] str){
+    public List<List<String>> groupAnagrams(String[] strs){
         Map<String,List<String>> groups=new HashMap<>();
-        for(String s : str){
+        for(String s : strs){
             char[] arr=s.toCharArray();
             Arrays.sort(arr);
             String key=new String(arr);

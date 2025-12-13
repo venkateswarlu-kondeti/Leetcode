@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
+//1941. Check if All Characters Have Equal Number of Occurrences
 public class EqualNumberOfOccurrences {
     public boolean areOccurrencesEqual(String s){
         Map<Character,Integer> counts=new HashMap<>();

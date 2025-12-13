@@ -2,7 +2,7 @@ package com.hashing;
 
 import java.util.HashSet;
 import java.util.Set;
-
+//1832. Check if the Sentence Is Pangram
 public class CheckSentenceIsPangram {
 
     public boolean checkIfPangram(String sentence) {

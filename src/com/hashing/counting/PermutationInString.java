@@ -2,7 +2,7 @@ package com.hashing.counting;
 
 import java.lang.reflect.Array;
 import java.util.*;
-
+//567. Permutation in String
 public class PermutationInString {
     public static boolean checkInclusion(String s1, String s2){
         StringBuilder sb=new StringBuilder(s2);

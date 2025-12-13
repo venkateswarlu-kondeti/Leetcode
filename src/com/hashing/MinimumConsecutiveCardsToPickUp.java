@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//2260. Minimum Consecutive Cards to Pick Up
 public class MinimumConsecutiveCardsToPickUp {
     public int minimumCardPickup(int[] cards){
         Map<Integer,Integer> dic=new HashMap<>();

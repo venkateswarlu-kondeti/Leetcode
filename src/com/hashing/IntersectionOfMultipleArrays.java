@@ -1,7 +1,7 @@
 package com.hashing;
 
 import java.util.*;
-
+//2248. Intersection of Multiple Arrays
 public class IntersectionOfMultipleArrays {
     public List<Integer> intersection(int[][] nums){
         Map<Integer,Integer> counts=new HashMap<>();

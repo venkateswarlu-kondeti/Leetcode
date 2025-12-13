@@ -2,7 +2,7 @@ package com.hashing.counting;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//2958. Length of Longest Subarray With at Most K Frequency
 public class LengthOfLongestSubarrayWithAtMostKFrequency {
     public int maxSubarrayLength(int[] nums,int k){
         int left=0;

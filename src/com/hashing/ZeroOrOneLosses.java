@@ -1,7 +1,7 @@
 package com.hashing;
 
 import java.util.*;
-
+//2225. Find Players With Zero or One Losses
 public class ZeroOrOneLosses {
     public List<List<Integer>> findWinners(int[][] matches){
         Map<Integer,Integer> loser=new HashMap<>();

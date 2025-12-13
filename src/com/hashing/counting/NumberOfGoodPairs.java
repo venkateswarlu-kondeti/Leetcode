@@ -2,7 +2,7 @@ package com.hashing.counting;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//1512. Number of Good Pairs
 public class NumberOfGoodPairs {
     public int numIdenticalPairs(int[] nums){
         Map<Integer,Integer> dic=new HashMap<>();

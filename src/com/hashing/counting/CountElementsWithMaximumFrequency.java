@@ -2,7 +2,7 @@ package com.hashing.counting;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//3005. Count Elements With Maximum Frequency
 public class CountElementsWithMaximumFrequency {
     public int maxFrequencyElements(int[] nums){
         Map<Integer,Integer> dic=new HashMap<>();

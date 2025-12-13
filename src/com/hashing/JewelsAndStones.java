@@ -2,7 +2,7 @@ package com.hashing;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//771. Jewels and Stones
 public class JewelsAndStones {
     public int numJewelsInStones(String jewels, String stones){
         Map<Character,Integer> dic=new HashMap<>();

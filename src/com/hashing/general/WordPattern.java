@@ -1,7 +1,7 @@
 package com.hashing.general;
 
 import java.util.*;
-
+//290. Word Pattern
 public class WordPattern {
     public static boolean wordPattern(String pattern, String s){
         Map<Character,String > dic=new HashMap<>();

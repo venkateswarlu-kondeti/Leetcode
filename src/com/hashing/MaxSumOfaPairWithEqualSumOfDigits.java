@@ -2,7 +2,7 @@ package com.hashing;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//2342. Max Sum of a Pair With Equal Sum of Digits
 public class MaxSumOfaPairWithEqualSumOfDigits {
     public int maximumSum(int[] nums){
         Map<Integer,Integer> dic=new HashMap<>();

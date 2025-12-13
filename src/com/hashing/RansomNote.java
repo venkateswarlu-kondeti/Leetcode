@@ -2,7 +2,7 @@ package com.hashing;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//383. Ransom Note
 public class RansomNote {
     public boolean canConstruct(String ransomNote, String magazine){
         Map<Character,Integer> dic=new HashMap<>(); // Space Complexity : O(n)

@@ -1,7 +1,7 @@
 package com.hashing.counting;
 import java.util.HashMap;
 import java.util.Map;
-
+//930. Binary Subarrays With Sum
 public class BinarySubarraysWithSum {
     public static int numSubarraysWithSum(int[] nums, int goal){
         Map<Integer,Integer> dic=new HashMap<>();
