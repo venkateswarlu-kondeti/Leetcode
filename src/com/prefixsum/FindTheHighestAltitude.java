@@ -1,7 +1,7 @@
 package com.prefixsum;
 
 import java.util.Arrays;
-
+//1732. Find the Highest Altitude
 public class FindTheHighestAltitude {
     public int largestAltitude(int[] gain){
         int n=gain.length;

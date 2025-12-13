@@ -1,7 +1,7 @@
 package com.prefixsum;
 
 import java.util.Arrays;
-
+//724. Find Pivot Index
 public class FindPivotIndex {
     public int pivotIndex(int[] nums){
         int n= nums.length;
