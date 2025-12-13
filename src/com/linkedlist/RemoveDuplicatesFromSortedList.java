@@ -1,7 +1,7 @@
 package com.linkedlist;
 
 import java.util.*;
-
+//83. Remove Duplicates from Sorted List
 public class RemoveDuplicatesFromSortedList {
     public static ListNode deleteDuplicates(ListNode head){
         while(head!=null && head.next!=null){

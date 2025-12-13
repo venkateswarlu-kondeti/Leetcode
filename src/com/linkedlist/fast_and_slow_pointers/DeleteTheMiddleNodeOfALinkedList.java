@@ -1,5 +1,5 @@
 package com.linkedlist.fast_and_slow_pointers;
-
+//2095. Delete the Middle Node of a Linked List
 public class DeleteTheMiddleNodeOfALinkedList {
     public static ListNode deleteMiddle(ListNode head){
         ListNode slow=head;

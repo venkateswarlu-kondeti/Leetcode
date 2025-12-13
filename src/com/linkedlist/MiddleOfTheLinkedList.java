@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.LinkedList;
 
 
-
+//876. Middle of the Linked List
 public class MiddleOfTheLinkedList {
     public static ListNode middleNode(ListNode head){
         ListNode slow=head;

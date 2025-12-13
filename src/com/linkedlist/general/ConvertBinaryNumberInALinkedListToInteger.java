@@ -1,5 +1,5 @@
 package com.linkedlist.general;
-
+//1290. Convert Binary Number in a Linked List to Integer
 public class ConvertBinaryNumberInALinkedListToInteger {
     public static int getDecimalValue(ListNode head) {
         int ans=0,len=0;
