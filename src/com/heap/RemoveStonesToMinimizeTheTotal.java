@@ -1,9 +1,8 @@
 package com.heap;
 
-import com.graphs.OpenTheLock;
 
 import java.util.*;
-
+//1962. Remove Stones to Minimize the Total
 public class RemoveStonesToMinimizeTheTotal {
     public static int minStoneSum(int[] piles, int k) {
         PriorityQueue<Double> heap=new PriorityQueue<>(Comparator.reverseOrder());
