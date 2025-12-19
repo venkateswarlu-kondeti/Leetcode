@@ -1,7 +1,7 @@
 package com.heap.bonus;
 
 import java.util.*;
-//692. Top K Frequent Words
+//692. Top K Frequent Words.
 public class TopKFrequentWords {
     public static List<String> topKFrequent(String[] words, int k) {
         Map<String,Integer> wordFreq=new HashMap<>();
