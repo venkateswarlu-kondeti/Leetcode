@@ -1,7 +1,7 @@
 package com.heap.bonus;
 
 import java.util.*;
-
+//2462. Total Cost to Hire K Workers
 public class TotalCostToHireKWorkers {
     public static long totalCost(int[] costs, int k, int candidates) {
         PriorityQueue<Integer> headHeap=new PriorityQueue<>();

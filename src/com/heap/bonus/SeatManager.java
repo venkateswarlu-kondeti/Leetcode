@@ -1,7 +1,7 @@
 package com.heap.bonus;
 
 import java.util.PriorityQueue;
-
+//1845. Seat Reservation Manager
 public class SeatManager {
     public PriorityQueue<Integer> heap;
     public SeatManager(int n) {
