@@ -37,6 +37,7 @@ public class FindKPairsWithSmallestSums {
             this.num1Index=num1Index;
             this.num2Index=num2Index;
         }
+        //Without Override HashSet treats every object as unique, Duplicate pairs will NOT be detected.
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
