@@ -2,7 +2,7 @@ package com.greedy;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
-
+//1710. Maximum Units on a Truck
 public class MaximumUnitsOnATruck {
     public static int maximumUnits(int[][] boxTypes, int truckSize) {
         Arrays.sort(boxTypes,(a,b) ->b[1]-a[1]);
