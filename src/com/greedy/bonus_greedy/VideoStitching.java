@@ -1,7 +1,7 @@
 package com.greedy.bonus_greedy;
 
 import java.util.*;
-
+//1024. Video Stitching
 public class VideoStitching {
     public static int videoStitching(int[][] clips, int time) {
         Arrays.sort(clips,(a,b) ->{
